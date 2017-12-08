@@ -1,0 +1,62 @@
+ <!-- <view class='container'>   -->
+<!--导航  -->
+  <!-- <view class='swiper-tab'>
+    <view class="list {{currentTab==0?'on':''}}" data-current='0' bindtap='switchNav'>今天11月8日</view>
+    <view class="list {{currentTab==1?'on':''}}" data-current='1' bindtap='switchNav'>今天11月8日</view>
+    <view class="list {{currentTab==2?'on':''}}" data-current='2' bindtap='switchNav'>今天11月8日</view>
+    <view class="list {{currentTab==3?'on':''}}" data-current='3' bindtap='switchNav'>今天11月8日</view> -->
+
+  <!-- </view> -->
+<!--内容  -->
+<!-- <swiper current="{{currentTab}}" class='swiper-box' duration='300'></swiper> -->
+
+<!-- </view>  -->
+<!--pages/movieList/movieList.wxml-->
+<view>
+  <view class='header'>
+    <span class="{{two?'block':'default'}}" bindtap='two'>今天11月8日</span>
+    <span class="{{there?'block':'default'}}" bindtap='there'>明天11月9日</span>
+    <span class="{{four?'block':'default'}}" bindtap='four'>周五11月10日</span>
+    <span class="{{five?'block':'default'}}" bindtap='five'>周六11月11日</span>
+  </view>
+  <!-- 11月2号 -->
+  <view class="{{two?'show':'hidden'}}">
+    <view class='padding'>
+      <view class='cinema' wx:for="{{cinemaList}}" wx:key="cinema{{index}}" bindtap='clickCinema' data-id="{{item._id}}" data-index="{{index}}" data-name="{{item.cinemaName}}" data-address="{{item.address}}"> 
+          <label class='cflex'><text class='cinemaNmae'>{{item.cinemaName}}</text><text class='price'>{{priceAll[index]}}元起</text></label>
+          <label class='adress'><label class='add'>{{item.address}}</label><text>1.2km</text></label>
+          <label class='time'>近期场次</label>
+      </view>
+    </view>
+  </view>
+  <!-- 11月3号 -->
+  <view class="{{there?'show':'hidden'}}">
+      <view class='padding'>
+      <view class='cinema' wx:for="{{cinemaList}}" wx:key="cinema{{index}}" bindtap='clickCinema' data-id="{{item._id}}">
+          <label class='cflex'><text class='cinemaNmae'>{{item.cinemaName}}</text><text class='price'>{{item.priceAll}}</text></label>
+          <label class='adress'><label>{{item.address}}</label><text>1.2km</text></label>
+          <label class='time'>近期场次</label>
+      </view>
+    </view>
+  </view>
+  <!-- 11月4号 -->
+  <view class="{{four?'show':'hidden'}}">
+        <view class='padding'>
+      <view class='cinema' wx:for="{{cinemaList}}" wx:key="cinema{{index}}" bindtap='clickCinema' data-id="{{item._id}}">
+          <label class='cflex'><text class='cinemaNmae'>{{item.cinemaName}}</text><text class='price'>{{item.priceAll}}</text></label>
+          <label class='adress'><label>{{item.address}}</label><text>1.2km</text></label>
+          <label class='time'>近期场次</label>
+      </view>
+    </view>
+  </view>
+  <!-- 11月5号 -->
+  <view class="{{five?'show':'hidden'}}">
+        <view class='padding'>
+      <view class='cinema' wx:for="{{cinemaList}}" wx:key="cinema{{index}}" bindtap='clickCinema' data-id="{{item._id}}">
+          <label class='cflex'><text class='cinemaNmae'>{{item.cinemaName}}</text><text class='price'>{{item.priceAll}}</text></label>
+          <label class='adress'><label>地址</label><text>1.2km</text></label>
+          <label class='time'>近期场次</label>
+      </view>
+    </view>
+  </view>
+</view>

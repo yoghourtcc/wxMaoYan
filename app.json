@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/says/says",
+    "pages/choose/choose",
+    "pages/details/details",
+    "pages/mine/mine",
+    "pages/menber/menber",
+    "pages/coupons/coupons",
+    "pages/order/order",
+    "pages/search/search",
+    "pages/cinema/cinema",
+    "pages/logs/logs",
+    "pages/cinemaSearch/cinemaSearch",
+    "pages/want/want",
+    "pages/see/see",
+    "pages/ticket/ticket",
+    "pages/seat/seat",
+    "pages/pay/pay"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#db403b",
+    "navigationBarTitleText": "猫眼电影",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#27a22e",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "电影"
+      },
+      {
+        "pagePath": "pages/cinema/cinema",
+        "text": "影院"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
+}

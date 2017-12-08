@@ -1,0 +1,7 @@
+<view class='cantainer'>
+  <view class='tips'>
+    <image src='../../img/cat.png'></image>
+    <text>暂无想看的电影</text>
+  </view>
+
+</view>

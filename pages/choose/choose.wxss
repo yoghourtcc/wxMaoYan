@@ -1,0 +1,72 @@
+/* pages/movieList/movieList.wxss */
+.header{
+  font-size: 26rpx;
+  padding: 30rpx 0 0rpx 0;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1rpx solid #ccc;
+  box-sizing: border-box;
+}
+.block{
+  font-size: 26rpx;
+  color: #db403b;
+  padding-bottom: 28rpx;
+  border-bottom: 2rpx solid #db403b;
+  display: block;
+}
+.default{
+  color:#7a7a7a;
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}
+/*电影院  */
+.padding{
+  padding: 30rpx;
+}
+.cinema{
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx 0 40rpx 0;
+  border-bottom: solid 2rpx #dcdcdc;
+}
+.cflex{
+  display: flex;
+  font-size: 40rpx;
+  width: 80%;
+}
+.cflex .price{
+  color:#ef4238;
+  font-size: 36rpx;
+  white-space: nowrap;
+}
+ .cinemaNmae{
+    margin-right: 20rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+} 
+.adress{
+  
+  display: flex;
+  color: #848484;
+  font-size: 30rpx;
+   
+}
+.add{
+  width: 85%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+ .time{
+  color: #666666;
+  font-size: 30rpx;
+}
+.ispadding{
+  padding: 40rpx 0 0 30rpx;
+}

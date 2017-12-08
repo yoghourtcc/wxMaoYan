@@ -1,0 +1,26 @@
+<view class='container'>
+  <view class='padding'>
+  <!--搜索  -->
+      <view class='search'>
+        <label class='city'>成都</label>
+        <input placeholder='搜索' class='ser' placeholder-class='holder' bindtap='search'></input>
+      </view>
+    </view>
+          <!--电影院  -->
+    <view class='inPadding'>
+      <view class="cinema" wx:for="{{cinemaList}}" wx:key="cinema{{index}}" bindtap='goto' data-id="{{item._id}}"  data-index="{{index}}">
+        <view class='left' >
+          <p class='flex'><label class='cname'>{{item.cinemaName}}</label>
+          <label class='price'>{{price[index]}}元起</label></p>
+          <p class='add'><label class='address'>{{item.address}}</label><text >1.2km</text></p>
+          <view class='play'>
+          <span class='one'>座</span><span class='one'>退</span><span class='eat'>小吃</span>
+          </view>
+          <label class='other'><span class='set'>卡</span>开卡特惠,首单两张立减10元</label>
+           
+        </view> 
+        
+      </view>
+    </view> 
+  
+</view>

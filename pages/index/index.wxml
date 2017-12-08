@@ -1,0 +1,73 @@
+<!--index.wxml-->
+<view class="container">
+ 
+  <view class='allPdaaing'>
+    <view class='search'>
+      <ul>
+        <li class='city'>成都</li>
+        <li class="{{select?'block':'default'}} " bindtap='select'>热映</li>
+        <li class="{{selected?'block':'default'}} " bindtap='selected'>待映</li>
+        <li class='icon_s'><image src='../../img/ic_web_search.png' bindtap='search'></image></li>
+      </ul>
+    </view>
+    <!--热映电影  -->
+    <view id='change' class="{{select?'show':'hidden'}}">
+      <view class='movies' wx:for="{{movieList}}" wx:key="list{{index}}">
+        <image class='picture' src='http://127.0.0.1:3000/{{item.bigImg[0]}}'></image>
+        <view class='details' catchtap='detail' data-id="{{item._id}}" data-name="{{item.CName}}">
+          <view class='split'><span class='movieName'>{{item.CName}}</span>
+          <label id='scores'>{{item.score}}</label></view>
+          
+          <span class='type color'>{{item.type}}</span>
+          <view class='split'><span class='actor type'>主演:{{item.actors}}</span>
+          <label class='btn' catchtap='buy' data-id="{{item._id}}" data-name="{{item.CName}}">购票</label></view>
+          
+          <span class='count type'>{{item.area}}</span>
+        </view>
+
+      </view>
+    </view>
+    <!--待映电影榜  -->
+    <view id='waits' class="{{selected?'show':'hidden'}}">
+      <view class='nearBy'>
+        <text class='sort'>近期最受欢迎榜</text>
+        <!--横向滚动期待榜  -->
+        <scroll-view scroll-x class='scroll' style='width:100%'>
+          <!-- <view class='boxWidth'> -->
+            <view class='waitMovies' wx:for="{{upList}}" wx:key='up{{index}}' bindtap='waitmovie' data-id="{{item._id}}">
+              
+                <image src='http://127.0.0.1:3000/{{item.bigImg[0]}}'></image>
+                <view class='boxWidth'>
+                  <label class='nName'>{{item.CName}}</label>
+                  <label class='little'>{{item.favor}}人想看</label>
+                  <label class='little'>{{item.releaseDate}}</label>
+                </view>
+            </view>
+          <!-- </view> -->
+        </scroll-view>
+        
+      </view>
+      <!--待映电影所有  -->
+      <view class='allUpcoming'  >
+        <text class='sort'>11月3日 周五</text>
+        <view class='movies' wx:for="{{upList}}" wx:key="list{{index}}" catchtap="upcom" data-id="{{item._id}}" data-name="{{item.CName}}">
+          <image class='picture' src="http://127.0.0.1:3000/{{item.bigImg[0]}}"></image>
+        <view class='details'>
+          <view class='split'><span class='movieName'>{{item.CName}}</span>
+          <label id='scores'>{{item.favor}}人想看</label></view>
+          
+          <span class='type color'>{{item.type}}</span>
+          <view class='split'><span class='actor type'>主演:{{item.actors}}</span>
+          <label class='btn' id='buycoming'catchtap='book' >预售</label></view>
+          
+          <span class='count type'>{{item.releaseDate}}{{item.releaseArea}}上映</span>
+        </view>
+     
+
+      </view>
+        
+       
+      </view>
+    </view>
+  </view>
+</view>

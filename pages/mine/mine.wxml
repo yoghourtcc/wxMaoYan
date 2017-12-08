@@ -1,0 +1,29 @@
+<view class='container'>
+
+  <view class='inner'>
+     <!-- <view class='big'>  -->
+       <view class='mine margin'> 
+        <view class='borders' bindtap='order'><label>我的订单</label><image src='../../img/jiantou.png'></image></view>
+      
+      </view>
+      <view class='mine'> 
+        <view class='borders' bindtap='coupons'><label>优惠卷</label><image src='../../img/jiantou.png'></image></view>
+      
+      </view>
+       <view class='mine bottom'> 
+        <view class='borders' bindtap='vip'><label>影院会员卡</label><image src='../../img/jiantou.png'></image></view>
+      
+      </view>
+      <view class='mine center'> 
+        <view class='borders' bindtap='want'><label>想看的电影</label><image src='../../img/jiantou.png'></image></view>
+      
+      </view>
+      <view class='mine'> 
+        <view class='borders' bindtap='see'><label>看过的电影</label><image src='../../img/jiantou.png'></image></view>
+      
+      </view>
+      
+     <!-- </view>  -->
+  </view>
+
+</view>

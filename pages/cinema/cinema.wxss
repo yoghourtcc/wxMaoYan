@@ -1,0 +1,87 @@
+
+.holder{
+  text-align: center;
+}
+.padding{
+  padding: 20rpx 20rpx;
+   background: #f5f5f5;
+}
+input{
+  background-color: white;
+  flex-grow: 1;
+  /* width: 80%; */
+}
+.search .city{
+  margin-right: 60rpx;
+}
+.search{
+  display: flex;
+}
+
+/*影院  */
+
+.cinema{
+    display: flex;  
+    flex-direction: column;
+   padding-bottom: 40rpx;
+   border-bottom: solid #dbdbdb 2rpx;
+   margin-bottom: 40rpx;  
+}
+.flex{
+  display: flex;
+  font-size: 40rpx;
+  width: 80%;
+}
+.cname{
+    margin-right: 20rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.flex .price{
+  white-space: nowrap;
+  color:#ce5b60;
+}
+.add{
+  display: flex;
+  color: #848484;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.address{
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 20rpx;
+}
+.left .other{
+  font-size: 32rpx;
+  color:#adadad;
+}
+.inPadding{
+  padding: 40rpx 0 0 30rpx;
+}
+.set{
+  font-size: 28rpx;
+  padding: 2rpx 6rpx;
+  background-color: #a978d3;
+  color: white;
+  border-radius: 4rpx;
+}
+.one{
+  font-size: 26rpx;
+  padding: 2rpx 6rpx;
+  border: solid #72a5a8 2rpx;
+  color: #72a5a8;
+}
+.eat{
+   font-size: 26rpx;
+  padding: 2rpx 6rpx;
+  border: solid #ffec7a 2rpx;
+  color: #ffec7a;
+}
+.play  span{
+  margin-right: 6rpx;
+}

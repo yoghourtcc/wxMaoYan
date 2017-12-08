@@ -1,0 +1,16 @@
+.search{
+  background-color: #f5f5f5;
+   
+}
+.padding{
+   padding: 20rpx;
+   display: flex;
+}
+.padding input{
+  background-color: white;
+  flex-grow: 1;
+}
+.padding text{
+  color:#e74c5c;
+  margin-left: 20rpx;
+}

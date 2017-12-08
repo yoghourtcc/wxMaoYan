@@ -1,0 +1,10 @@
+<view class='cantainer'>
+  <view class='tips'>
+    <image src='../../img/cat.png'></image>
+    <text>你还没有影院会员卡</text>
+    <button type='default' plain class='color' style="color:#e73a3c; border-color:#e74634">
+    开通更多影院会员卡
+    </button>
+  </view>
+
+</view>

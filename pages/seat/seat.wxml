@@ -1,0 +1,51 @@
+<view class='container'>
+  <view class='header'>
+    <text class='cinemaName'>{{cinemaName}}</text>
+    <label class='small'><text>今天11月日</text><text>{{time}}</text><text>英语3D</text></label>
+  </view>
+</view>
+<view class='choose'>
+  <label><image src='../../img/white.png'></image>可选</label>
+  <label><image src='../../img/redseat.png'></image>不可选</label>
+  <label><image src='../../img/green.png'></image>已选</label>
+</view>
+<view class='inner'>
+  <view class='hall'>{{hall}}</view>
+  <!--坐位  -->
+  <view class='seats'>
+   
+    <view class='right' wx:for="{{seat}}" wx:key="seat{{index}}" wx:for-index="x">
+    <view class='background'>
+      <view class='left' >{{x+1}}</view>
+    </view>
+    <view class='margin'>
+       <image class='box' src="{{selected[aa]}}" wx:for="{{item}}" wx:for-item="aa" bindtap="change" wx:key="aa{{y}}" data-x="{{x}}" wx:for-index="y" data-y="{{y}}" data-name="{{aa}}"></image>
+    </view>
+    </view>
+  </view>
+</view>
+<!--自己点击内容选座  -->
+<view class='null'>
+  <text class='recommend'>推荐坐位</text>
+  <view class='position' wx:if="{{array.length==0}}">
+      <button plain>1人</button>
+      <button plain>2人</button>
+      <button plain>3人</button>
+      <button plain>4人</button>
+  </view>
+  <view class='position' wx:else>
+    <button  wx:for="{{array}}" plain wx:key="arr{{index}}" bindtap='reduce' data-x="{{item.x}}" data-y="{{item.y}}">{{item.x+1}}排{{item.y+1}}座</button>
+  </view>
+</view>
+<!--算价格跟结算  -->
+<view class='footer'>
+  <view class='foo-left'>
+    <text wx:if="{{array.length==0}}" style="color:#949494;">一次最多购买四张</text>
+    <view wx:else class='counts'>
+    <text   class='price'>{{newprice}}元</text>
+    <text class='smallPrice'>{{price}}x{{array.length}}</text></view>
+  </view>
+  <button bindtap='pay' class="{{have?'yes':'no'}}">确认选座</button>
+</view>
+
+

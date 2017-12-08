@@ -1,0 +1,268 @@
+.header{
+  padding: 26rpx;
+  display: flex;
+}
+.cinema{
+  font-size: 40rpx;
+  flex-grow: 1;
+}
+.left text{
+  display: block;
+}
+.address{
+  font-size: 32rpx;
+  line-height: 40rpx;
+  color:#9B9B9B;
+}
+#map{
+  width:35rpx;
+  height:35rpx;
+}
+#txt{
+  font-size: 28rpx;
+  color:#9B9B9B;
+ display: block;
+}
+.right{
+  width:84rpx;
+  height:84rpx;
+  text-align: center;
+}
+.left{
+  padding-right: 10rpx;
+   width:580rpx;
+}
+.box{
+  height:290rpx;
+  z-index: 0;
+  position: relative;
+  background-color:#DCDCDC;
+}
+/*轮播  */
+
+#banner i{
+  z-index: 66;
+  display: inline-block;
+  position: absolute;
+  top:284rpx;
+  left:360rpx;
+  width:0;
+  height:0;
+  border-bottom: 20rpx white solid;
+  border-left: 20rpx transparent solid;
+  border-right: 20rpx transparent solid;
+}
+
+
+#banner {
+  height: 292rpx;
+}
+#banner #swiperBox .fa-sort-up {
+  color: #fff;
+  font-size: 32rpx;
+  position: absolute;
+  left: 50%;
+  bottom: -19rpx;
+  text-align: center;
+  transform: translateX(-50%);
+}
+#banner #swiperBox .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#banner #swiperBox .item {
+  width: 220rpx !important;
+  left: 265rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#banner #swiperBox .default {
+  width: 162rpx;
+  height: 225rpx;
+  transition: all 500ms linear;
+}
+#banner #swiperBox .curMovie {
+  width: 184rpx;
+  height: 254rpx;
+  border: 1rpx solid #fff;
+  transition: all 500ms linear;
+}
+#movie_info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 25rpx 0;
+}
+#movie_info .title {
+  align-items: baseline;
+  display: flex;
+}
+#movie_info .title .cName {
+  font-size: 30rpx;
+}
+#movie_info .title .score_box {
+  margin-left: 10rpx;
+  color: #FFC600;
+  font-size: 22rpx;
+}
+#movie_info .title .score {
+  font-size: 28rpx;
+}
+#movie_info .foot {
+  color: #646464;
+}
+#movie_info .foot text {
+  font-size: 26rpx;
+  margin: 0 5rpx;
+}
+.scheule{
+  width:100%;
+  /* padding: 12rpx 28rpx; */
+}
+.box{
+  display: flex;
+  justify-content:space-between;
+  height:145rpx;
+  width:100%;
+ background-color: white;
+ border-bottom: 1rpx solid #DCDCDC;
+  padding: 12rpx 28rpx; 
+}
+.box text{
+  display: block;
+}
+.time{
+  text-align: left;
+  margin-top: 30rpx;
+}
+.cheakD{
+  text-align: left;
+  margin-top: 30rpx;
+}
+.price{
+  text-align: left;
+  margin-top: 30rpx;
+}
+.bnt{
+  text-align: left;
+  margin-top: 48rpx;
+  margin-right: 60rpx;
+}
+.time text:first-child{
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.cheakD text:first-child{
+  margin-top: 6rpx;
+  font-size: 28rpx;
+}
+.cheakD text:nth-child(2){
+  font-size: 28rpx;
+  color:#999999;
+  margin-top: 6rpx;
+}
+.price text:first-child{
+  font-size: 30rpx;
+  color:#EF4238;
+}
+.price text:nth-child(2){
+  font-size: 28rpx;
+  color:#999999;
+  margin-top: 6rpx;
+}
+.bnt button{
+  color:white;
+  background-color: #EF4238;
+  width:96rpx;
+  height:52rpx;
+  font-size: 28rpx;
+  line-height: 52rpx;
+}
+.date{
+  width:100%;
+  padding: 20rpx 20rpx;
+  border-bottom: 1rpx solid #DCDCDC;
+  border-top: 1rpx solid #DCDCDC;
+}
+.date text{
+  font-size: 28rpx;
+  margin-right: 46rpx;
+  color: #ef4238;
+}
+.show{
+  width:100%;
+  height:320rpx;
+  text-align: center;
+}
+.show image{
+  width:140rpx;
+  height:100rpx;
+  margin-top: 100rpx;
+}
+.show text{
+  font-size: 32rpx;
+  color:#999999;
+  display: block;
+}
+.kong{
+  width:100%;
+  height:20rpx;
+  background-color: #F5F5F5;
+  border-bottom: 1rpx solid #DCDCDC;
+}
+.goods{
+  width:100%;
+  padding: 26rpx 20rpx;
+}
+.goods_header{
+  font-size: 32rpx;
+  margin-bottom: 26rpx;
+  
+  width: 100%;
+}
+.goods_list{
+  display: flex;
+  border-top:1rpx solid #ccc;
+  border-bottom:1rpx solid #ccc;
+  text-align: left;
+  padding-top: 20rpx;
+  margin-top: 20rpx;
+}
+.goods_img image{
+  width:145rpx;
+  height:145rpx;
+}
+.goods_txt{
+  margin-left: 24rpx;
+  width:410rpx;
+}
+.goods_txt text{
+  display: block;
+}
+.goods_txt text:first-child{
+  font-size: 32rpx;
+}
+.goods_txt text:nth-child(2){
+  font-size: 26rpx;
+  color:#9B9B9B;
+  line-height: 60rpx;
+}
+.goods_price text{
+  display: inline-block;
+}
+.goods_price text:first-child{
+  font-size: 32rpx;
+  color:#EF4238;
+}
+.goods_price text:nth-child(2){
+  margin-left: 16rpx;
+}
+.goods_num{
+  margin-top: 116rpx;
+  font-size: 26rpx;
+  color:#9B9B9B;
+}

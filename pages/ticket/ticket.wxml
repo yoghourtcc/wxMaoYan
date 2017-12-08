@@ -1,0 +1,94 @@
+<view class='header'>
+    <view class='left'>
+    <text class='cinema'>{{cinema}}</text>
+    <text class='address'>{{address}}</text>
+    </view>
+    <view class='right'>
+      <image id='map' src='../../img/map.png'></image>
+      <text id='txt'>地图</text>
+    </view>
+</view>
+<!-- 轮播 -->
+<view id='banner'>
+  <swiper id="swiperBox"  bindchange="changeMovie" current="{{current}}">
+        <view class="bg" style='background-image:url(http://127.0.0.1:3000/{{curMovie.bigImg[0]}});filter:blur(15px)'></view>
+        <view class='club' wx:for='{{movieList}}' wx:key='lab{{index}}'>
+           <swiper-item class="item">
+               <image src='http://127.0.0.1:3000/{{item.bigImg[0]}}' class="{{curMovieIndex==index?'curMovie':'default'}}"></image>
+           </swiper-item>
+        </view>
+        <!-- <text class=" fa fa-sort-up "></text> -->
+        <i></i>
+  </swiper>
+</view>
+
+
+<view id="movie_info">
+        <view class="title">
+            <text class="cName">{{curMovie.CName}}</text>
+            <view class="score_box">
+                <text class="score">{{curMovie.score}}</text>
+            </view>
+        </view>
+        
+        <view class="foot">
+            <text>{{curMovie.duration}}分钟</text>
+            <text>|</text>
+            <text>{{curMovie.type}}</text>
+            <text>|</text>
+            <text>{{curMovie.actors[0]}}</text>
+        </view>
+</view>
+<!-- //日期 -->
+<view class='date'>
+ 
+</view>
+
+<!-- 有排片 -->
+<view class='scheule' wx:if='{{length>0}}'>
+    <view  class='box' wx:for='{{scheule}}' wx:key="scheule{{index}}">
+        <view class='time'>
+          <text>{{item.time}}</text>
+          <text></text>
+        </view>
+        <view class='cheakD'>
+          <text>英语3D</text>
+          <text>{{item.projName}}</text>
+        </view>
+        <view class='price'>
+          <text>{{item.price}}元</text>
+          <text>折扣卡首单优惠</text>
+        </view>
+        <view class='bnt'>
+          <button data-price='{{item.price}}' data-id='{{item._id}}' data-time='{{item.time}}' data-seat='{{item.seats}}' data-hall='{{item.projName}}' bindtap='goSeat'>购票</button>
+        </view>
+    </view>
+    <view class='kong'></view>
+    <view class='goods'>
+        <text class='goods_header'>观影套餐</text>
+        <view class='goods_list'>
+            <view class='goods_img'>
+                <image src=''></image>
+            </view>
+            <view class='goods_txt'>
+                <text>{{setMeal.text}}</text>
+                <text>{{setMeal.content}}</text>
+                <view class='goods_price'>
+                  <text>{{setMeal.priceRed}}</text>
+                  <text>影院价：{{setMeal.priceAll}}</text>
+                </view>
+            </view>
+            <view class='goods_num'>
+                <text>已售1234</text>
+            </view>
+        </view>  
+    </view>
+</view>
+<!-- 没有排片 -->
+<view wx:else class='show'> 
+    <image src=''></image>
+    <text>今日场次已映完</text>
+</view> 
+
+
+

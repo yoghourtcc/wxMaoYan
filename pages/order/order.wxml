@@ -1,0 +1,7 @@
+<view class='cantainer'>
+  <view class='tips'>
+    <image src='../../img/cat.png'></image>
+    <text>你还没有历史订单</text>
+  </view>
+
+</view>

@@ -1,0 +1,7 @@
+<view class='search'>
+  <view class='padding'>
+    <input placeholder='找影院' focus='{{focus}}'></input>
+    <text bindtap='cancel'>取消</text>
+  </view>
+
+</view>

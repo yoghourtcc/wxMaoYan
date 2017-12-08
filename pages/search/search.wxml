@@ -1,0 +1,24 @@
+<view class='search'>
+  <view class='padding'>
+    <input placeholder='找影视剧、影院' focus='{{focus}}' bindinput="input" name='vvv'></input>
+    <text bindtap='cancel'>取消</text>
+  </view>
+
+</view>
+<view wx:if="{{flag}}">
+ <view class='movies' wx:for="{{movie}}" wx:key="list{{index}}">
+        <image class='picture' src='http://127.0.0.1:3000/{{item.bigImg[0]}}'></image>
+        <view class='details' catchtap='detail' data-id="{{item._id}}" data-name="{{item.CName}}">
+          <view class='split'><span class='movieName'>{{item.CName}}</span>
+          <label id='scores'>{{item.score}}</label></view>
+          
+          <span class='type color'>{{item.type}}</span>
+          <view class='split'><span class='actor type'>主演:{{item.actors}}</span>
+          <label class='btn' catchtap='buy' data-id="{{item._id}}" data-name="{{item.CName}}">购票</label></view>
+          
+          <span class='count type'>{{item.area}}</span>
+        </view>
+
+      </view>
+</view>
+<view wx:else></view>

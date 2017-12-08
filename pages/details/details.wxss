@@ -1,0 +1,229 @@
+ .header{
+  width:100%;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  height: 500rpx;
+} 
+.blur{
+  filter: blur(15rpx);
+  background-repeat: no-repeat;
+  background-size: 100% ;
+   width: 100%; 
+   position: absolute;
+   z-index: -1;
+   height: 500rpx;
+}
+ .details .pic{
+  width: 220rpx;
+  height: 280rpx;
+   border: solid #66656a 2rpx; 
+  box-sizing: border-box;
+  position: absolute;
+  left: 30rpx;
+} 
+.innerDetails{
+  position: absolute;
+  left: 300rpx;
+}
+.innerDetails label{
+  display: block;
+}
+ .buttons{
+  display: flex;
+  position: absolute;
+  top:350rpx;
+  left:30rpx;
+  width: 90%;
+   height: 85rpx; 
+ }
+.buttons button{
+  width: 48%;
+   background-color: #685e5f; 
+   color:white;
+}
+/*按钮  */
+.header .mName {
+  font-size: 40rpx;
+  color: white;
+}
+.header .eName{
+  font-size: 32rpx;
+  color:white;
+}
+.header .count{
+  font-size: 28rpx;
+  color: #a9aaac;
+}
+.header .type ,.time, .date{
+   font-size: 32rpx;
+  color:#9ea5ab;
+}
+.header .wantImg{
+  width:32rpx;
+  height:26rpx;
+  position: absolute;
+  left: 80rpx;
+  top:36rpx;
+}
+.header .wantScore{
+  width: 32rpx;
+  height: 26rpx;
+  position: absolute;
+  left: 425rpx;
+  top: 36rpx;
+}
+
+.intruduce{
+  padding: 40rpx 40rpx 40rpx 20rpx;
+}
+.null{
+  padding: 20rpx 0;
+  background-color: #f5f5f5;
+  border-bottom: #d7d7d7 solid 2rpx;
+  border-top: #d7d7d7 solid 2rpx;
+}
+ #buy button{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ef4339;
+  color:white;
+} 
+/*简介点击展开  */
+.block{
+  height: 150rpx;
+  overflow: hidden;
+   font-size: 40rpx;
+}
+
+.default{
+  font-size: 40rpx;
+}
+.setCenter{
+   text-align: center; 
+}
+.icon{
+  margin-top: 30rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.padding{
+  padding: 40rpx;
+}
+/*演员照片  */
+  .picAll{
+    display: inline-block;
+    margin-right: 30rpx;
+    text-align: center;
+    width:170rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .picAll image{
+    width: 170rpx;
+    height: 230rpx;
+    /* border: solid; */
+    display: block;
+  }
+/*横向滚动条  */
+.scroll{
+  display: flex;
+  white-space: nowrap;  
+}
+
+.after{
+  height: 400rpx;
+}
+/*票房  */
+.padding{
+  padding: 40rpx;
+}
+.office .box .num{
+  font-size: 52rpx;
+  color:#ef574c;
+}
+.office .box{
+  display: flex;
+  justify-content: space-around;
+}
+.box .center{
+  text-align: center;
+}
+.box .center .text{
+  font-size: 34rpx;
+  color:#a2a2a2;
+}
+/*剧照  */
+.padding{
+  padding:40rpx;
+}
+.newscoll{
+  display: flex; 
+  white-space: nowrap; 
+}
+.newPic{
+  margin-right: 30rpx;
+  display: inline-block;
+  
+}
+.pic image{
+  width: 300rpx;
+  height: 260rpx;
+  /* border:solid; */
+  display: inline-block;
+  margin-top: 40rpx;
+  margin-right: 30rpx;
+ 
+}
+/*写短评观众评论  */
+
+.audience .write{
+   display: flex;
+}
+
+.audience .write text{
+   flex-grow: 1;
+}
+.audience{
+  border-bottom:solid #d7d7d7 2px;
+}
+
+/*每一条观众评论  */
+
+.allSay{
+  display: flex;
+}
+.allSay .userName{
+  font-size: 40rpx;
+}
+.allSay .allInner{
+  display: flex;
+  flex-direction: column;
+   width: 80%; 
+   margin-left: 40rpx;
+   font-size: 40rpx;
+}
+.allSay .user{
+  width: 120rpx;
+  height: 120rpx;
+}
+.allInner .star{
+  width: 150rpx;
+  height: 50rpx;
+}
+.allInner .says{
+  margin-top: 20rpx;
+}
+.allInner span{
+  padding: 4rpx;
+  border: solid 2rpx #7bc6ee;
+  color:#7bc6ee;
+  font-size: 38rpx;
+  border-radius: 12rpx;
+  margin-left: 10rpx;
+}
+.allInner p{
+  margin-bottom: 10rpx;
+}

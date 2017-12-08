@@ -1,0 +1,132 @@
+.header{
+  display: flex;
+  flex-direction: column;
+ padding-bottom: 40rpx;
+  border-bottom: solid #eee 2rpx;
+}
+.container{
+   padding: 40rpx;
+}
+.cinemaName{
+  font-size: 40rpx;
+}
+.header .small{
+  font-size: 32rpx;
+}
+.choose image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.choose{
+  padding: 0 40rpx;
+  text-align: center;
+}
+.choose label{
+  margin-right: 20rpx;
+  font-size: 32rpx;
+}
+
+  /*中心选座位  */
+
+  .inner{
+    background-color: #f0f0f0;
+    margin-top: 20rpx;
+    padding-bottom: 150rpx;
+    position: relative;
+  
+  }
+  .inner .hall{
+    font-size: 32rpx;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    padding: 6rpx;
+    background-color: #dcdcdc;
+    
+  }
+  .box{
+    width: 50rpx;
+    height: 50rpx;
+    display: inline-block;
+  }
+  /* .seats .right label{
+    display: flex;
+  } */
+
+  /*左边列表  */
+  .background{
+    background-color: #c3c3c3;
+    position: absolute;
+    left: 0;
+    padding: 10rpx 6rpx;
+    border-radius: 10rpx;
+  }
+   .seats{
+   padding-top: 30rpx;
+  } 
+
+  image{
+    margin-right: 10rpx;
+    
+  }
+.margin{
+  padding-left: 60rpx;
+}
+
+/*选坐位出现的几排几座  */
+.position button{
+  float: left;
+  margin-right: 10rpx;
+  font-size: 28rpx;
+}
+.recommend{
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  font-size: 28rpx;
+}
+.choose button{
+  float: left;
+  font-size: 28rpx;
+  margin-right: 10rpx;
+  border-color: #dedede;
+}
+.null{
+  padding-bottom: 20rpx;
+  border-bottom: solid #eee 2rpx;
+  overflow: hidden;
+}
+.footer{
+  padding: 20rpx;
+   /* display: flex;  */
+  
+}
+.footer .no{
+  background-color: #fed699;
+  font-size: 36rpx;
+  color: white;
+  /* float: right; */
+}
+.footer .price{
+  font-size: 36rpx;
+  color: #e23c48;
+  /* float: left; */
+}
+.counts{
+  display: flex;
+  flex-direction: column;
+}
+.smallPrice{
+  font-size: 28rx;
+  color: #b1b1b1;
+}
+.foo-left{
+  float: left;
+}
+.footer button{
+  float: right;
+}
+.footer .yes{
+  background-color: #fd9905;
+  color:white;
+  font-size: 36rpx;
+}

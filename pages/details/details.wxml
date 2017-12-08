@@ -1,0 +1,108 @@
+<view class='container'>
+  <view class='header'>
+      <view class='blur' style='background-image:url(http://127.0.0.1:3000/{{detailsList.bigImg[0]}})'></view> 
+     <!-- <image class='banner' src='http://127.0.0.1:3000/{{detailsList.bigImg[0]}}'>  -->
+      <view class='details'>
+        <image src='http://127.0.0.1:3000/{{detailsList.bigImg[0]}}' class='pic'></image>
+      </view>
+          <view class='innerDetails'> 
+            <label class='mName'>{{detailsList.CName}}</label>
+            <label class='eName'>{{detailsList.EName}}</label>
+            <label class='count'>(6.9万人评分)</label>
+            <label class='type'>{{detailsList.type}}</label>
+            <label class='time'>{{detailsList.area}}/{{detailsList.duration}}</label>
+            <label class='date'>{{detailsList.releaseDate}}{{detailsList.releaseArea}}</label>
+          </view>
+      
+      <view class='buttons'>
+        <button type='default' size='default' plain="true" style='color:white' bindtap="wantLook">{{want}}</button>
+        <image src='{{wantImg}}' class='wantImg'></image>
+        <button type='default' size='default' plain='true' style='color:white' bindtap="setScore">{{score}}</button>
+        <image src='{{scoreImg}}' class='wantScore'></image>
+      </view>
+       <!-- </image>  -->
+  </view>
+  <!--中间简介  -->
+  <view class='center padding'>
+     <view class="{{select?'default':'block'}} ">{{detailsList.synopsis}}</view> 
+    <!-- <view wx:if="{{select}}" class='block'>
+      这是简介提一哈人奇闻趣事多csfgwr谁给我给我规划局而台湾问问的是啥事都根深蒂固各位如果的范围为违反问我给    我给我给我问问违法添加他已经们预计于人与人一如入土人家要</view>
+      <view wx:else class="default">   这是简介提一哈人奇闻趣事多csfgwr谁给我给我规划局而台湾问问的是啥事都根深蒂固各位如果的范围为违反问我给    我给我给我问问违法添加他已经们预计于人与人一如入土人家要</view> -->
+    <view class='setCenter'><image src='../../img/wo.png' class='icon' bindtap='change'></image></view>
+  </view>
+  <view class='null'></view>
+  <!--演职人员  -->
+  <view class='actors padding'>
+    <text>演职人员</text>
+        <!-- <view class='section'> -->
+        <scroll-view class='scroll' scroll-x style='whidth:100%'>
+        <view class='picAll' wx:for="{{detailsList.actorImg}}" wx:key="pics{{index}}">
+          <image src="http://127.0.0.1:3000/{{item}}"></image>
+          <text class='acName'>{{detailsList.actors[index]}}</text>
+        </view>
+        </scroll-view> 
+        <!-- </view> -->
+        
+        <!--票房  -->
+     
+    
+  </view>
+  <!--票房  -->
+    <view class='null'></view> 
+        <view class='office padding'>
+          <text>票房</text>
+          <view class='box'>
+            <label class='center'>
+              <view class='num'>1</view>
+              <text class='text'>昨日票房排行</text>
+            </label>
+            <label class='center'>
+              <view class='num'>2248</view>
+              <text class='text'>首周票房(万)</text>
+            </label>
+            <label class='center'>
+              <view class='num'>2501</view>
+              <text class='text'>累计票房(万)</text>
+            </label>
+          </view>
+        
+        </view> 
+            <!--视频和剧照  -->
+         <view class='pic padding'>
+          <text>视频和剧照</text>
+          <scroll-view scroll-x style="width:100%" class='newscoll'>
+          <view class='newPic'>
+            <image  src='http://127.0.0.1:3000/{{item}}' wx:for="{{detailsList.pictures}}" wx:key="pic{{index}}"></image>
+          </view>
+          </scroll-view>
+        </view> 
+         <view class='null'></view> 
+         <!-- 观众评论 -->
+         <view class='audience padding'>
+          <view class='write'> 
+          <text>观众评论</text>
+            <button type='default' plain style='color:#ee4252; border-color:#a95f70;border-radius:30rpx;' size="mini" bindtap='clickWrite'>写短评</button>
+         </view>
+        
+
+
+         
+         </view>
+          <!--观众个人评论内容  -->
+        <view class='allSay padding'>
+          <image src='../../img/user.png' class='user'></image>
+          <view class='allInner' wx:for="{{detailsList.userSay}}" wx:key="say{{index}}">
+            <p><label class='userName'>{{item.name}}</label><span>购</span></p>
+            <image src='../../img/new.png' class='star'></image>
+            <view class='says'>{{item.say}}</view>
+              
+            </view>
+         </view>
+
+
+  <view class='after'></view>
+  <view id='buy'>
+    <button type='default' bindtap="buyTicket" data-id="{{detailsList._id}}" data-name="{{detailsList.CName}}">优惠购票</button>
+  
+  </view>
+</view>

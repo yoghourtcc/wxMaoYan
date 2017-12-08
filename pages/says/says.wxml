@@ -1,0 +1,22 @@
+<view class='container'>
+  <view class='user'>
+  <view class='num'>{{num}}</view>
+    <block wx:for="{{stars}}" class='flex' wx:key="star{{index}}">
+      <image class='star-image' style="left:{{item*100}}rpx" src="{{key>item?(key-item==0.5?halfSrc:selectedSrc):normalSrc}}">
+        <view class='item' style="left:0rpx" data-key="{{item+0.5}}" bindtap="selectLeft"></view>
+        <view class='item' style="left:50rpx" data-key="{{item+1}}" bindtap="selectRight"></view>
+      </image>  
+    </block>
+  </view>
+     <view class='input'>
+      <form bindsubmit="bindFormSubmit" style="overflow:hidden">
+        <textarea placeholder="快来说说你的看法吧(6-300个字)" name="textarea" focus  maxlength="300"/>
+        <button form-type="submit"> 提交 </button>
+      </form>
+  
+  </view> 
+
+
+
+
+</view>

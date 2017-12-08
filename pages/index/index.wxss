@@ -1,0 +1,161 @@
+/*头部  */
+
+ .allPdaaing{
+  padding: 0 30rpx;
+} 
+
+/*搜索  */
+.search{
+ padding: 10rpx;
+}
+.search ul{
+  display: flex;
+  justify-content: space-between;
+  
+  font-size: 38rpx;
+   border-bottom:solid 2rpx #d7d7d7;
+  box-sizing: border-box;
+}
+.search ul li{
+  padding: 10rpx;
+}
+.search .block{
+   color:#db403b; 
+  border-bottom:solid 2px ; 
+  box-sizing: border-box;
+}
+.search .default{
+   color:#7a7a7a; 
+
+}
+.show{
+   display: block; 
+}
+.hidden{
+   display: none; 
+}
+.search .city{
+  font-size: 34rpx;
+  color:#7a7a7a;
+}
+.search .icon_s image{
+  width: 36rpx;
+  height: 30rpx;
+}
+/*热映电影跟详情 */
+.movies{
+  display: flex;
+  margin: 20rpx 0;
+  border-bottom: solid 2rpx #d7d7d7;
+  padding-bottom: 20rpx;
+  /* justify-content: space-between; */
+}
+.movies .picture{
+  width: 120rpx;
+  height: 160rpx;
+  /* border: solid; */
+
+}
+.details{
+  display: flex;
+   flex-direction: column; 
+    width: 65%;  
+  flex-grow: 1;
+  margin-left: 20rpx;
+}
+.details span{
+  display:inline-block;  
+    
+}
+.details .movieName{
+  font-size: 42rpx;
+}
+.details .type{
+  font-size: 32rpx;
+  color:#6f6f6f;
+}
+.details .count{
+  color:#cacaca;
+}
+.details .actor{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; 
+}
+.details .split{
+  display: flex;
+}
+.details .movieName , .actor{
+  flex-grow: 1;
+  margin-right: 20rpx;
+}
+.btn{
+  font-size: 32rpx;
+  white-space: nowrap;
+  padding: 6rpx;
+  background-color:#ee433b;
+  border-radius:8rpx;
+  color:white;
+}
+#scores{
+  font-size: 32rpx;
+  /* white-space: nowrap; */
+  color:#ffc63a;
+}
+
+
+
+/*待映电影  */
+#waits .sort{
+   font-size: 34rpx; 
+}
+/*横向滚动条  */
+.scroll{
+  margin-top: 16rpx;
+  display: flex;
+  white-space: nowrap;
+}
+#waits .waitMovies{
+  display: inline-block;
+  margin-right: 35rpx;
+  text-overflow: ellipsis;
+   /* width: 25%;  */
+ 
+}
+/* //每个电影宽度 */
+#waits .boxWidth{
+  display: flex;
+  flex-direction: column;
+   width: 140rpx; 
+ 
+}
+#waits .waitMovies image{
+  width: 140rpx;
+  height: 180rpx;
+  /* border: solid; */
+}
+#waits .waitMovies .nName{
+  font-size: 34rpx;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#waits .waitMovies label{
+  display: inline-block; 
+  font-size: 26rpx; 
+ text-align: center;
+}
+#waits .little{
+  color:#9a9a9a;
+  
+}
+/*所有待映电影  */
+
+.allUpcoming{
+  margin-top: 20rpx;
+}
+#buycoming{
+  background-color: #5aabea;
+}
+

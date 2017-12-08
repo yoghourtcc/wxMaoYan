@@ -1,0 +1,41 @@
+.user{
+  width: 500rpx;
+ position: relative;
+ height: 200rpx;
+margin: auto;
+}
+.star-image{
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+    top: 60rpx;  
+  src: "../../img/star_small_off.png";
+}
+/*隐藏的点击事件  */
+.item{
+  position: absolute;
+  top: 20rpx; 
+  width: 50rpx;
+  height: 100rpx;
+}
+.num{
+  text-align: center;
+  color: #ecd509;
+  font-size: 50rpx;
+}
+.container{
+   padding: 40rpx; 
+}
+.input{
+  width: 100%;
+}
+.input textarea {
+  height: 200rpx;
+  border: solid #d9d9d9 2rpx;
+  margin: auto;
+}
+button{
+  margin-top: 60rpx;
+  background-color: #fe9901;
+  color:white;
+}

@@ -1,0 +1,31 @@
+<view class='header'>
+  <view class='flex'>
+    <text class='movieName'>{{movieName}}</text>
+    <text class='time'>今天11-08{{time}}(原版3D)</text>
+    <label class='cinemaName'><text>{{cinemaName}}</text><text>{{hall}}</text></label>
+  </view>
+  <text wx:for="{{array}}" wx:key="arr{{index}}" class='position'>{{item.x}}排{{item.y}}座,</text>
+</view>
+<view class='price '><label>票价</label><text class='service'>含服务费4.5/张</text><text class='newprice'>{{newprice}}元</text></view>
+<view class='null'></view>
+<view class='price border'><label>活动和优惠券</label><text class='no'>无可用</text></view>
+<view class='null'></view>
+<view class='price border'><label>退改签须知</label></view>
+<view class='know'>
+  <text>不可改签</text>
+  <text>不可退款</text>
+  <text>使用观影卡或享受票减小吃特惠时，不可改签</text>
+</view>
+<view class='price border'><label  class='phone'>手机号</label><text>11122233311</text></view>
+<view class='price '><label class='color'>手机号仅用于生成订单，取票码不再以短信发送</label></view>
+<view class='null'></view>
+<view class='footer'>
+  <view class='more'>
+    <view class='left'><text>该场次不可改签</text><text>该场次不可退票</text></view>
+     <view class='right'>
+    <text>还需支付:</text>
+    <text class='payFor'>{{newprice}}元</text>
+  </view>
+  </view>
+ <button bindtap='sure'>确认支付</button>
+</view>
